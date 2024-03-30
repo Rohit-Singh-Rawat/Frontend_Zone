@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    font-style: normal;
+    font-weight: 700; /* Bold */
+    src: url('./assets/font/FuturaCyrillicBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    font-style: normal;
+    font-weight: normal; /* Book */
+    src: url('./assets/font/FuturaCyrillicBook.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    font-style: normal;
+    font-weight: normal; /* Demi */
+    src: url('./assets/font/FuturaCyrillicDemi.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    font-style: normal;
+    font-weight: normal; /* Extra Bold */
+    src: url('./assets/font/FuturaCyrillicExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    font-style: normal;
+    font-weight: normal; /* Heavy */
+    src: url('./assets/font/FuturaCyrillicHeavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    font-style: normal;
+    font-weight: normal; /* Light */
+    src: url('./assets/font/FuturaCyrillicLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    font-style: normal;
+    font-weight: normal; /* Medium */
+    src: url('./assets/font/FuturaCyrillicMedium.ttf') format('truetype');
+}
+
+body {
+	font-family: 'Futura Cyrillic';}
