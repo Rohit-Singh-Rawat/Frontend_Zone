@@ -3,44 +3,48 @@ import { commonCountries, countries } from './Countries';
 import Socials from './Socials';
 const Footer = () => {
 	return (
-		<div>
-			<h1>Abelton</h1>
-			<div>
-				<div>
-          <SignUpNewsletter></SignUpNewsletter>
-          <Socials></Socials>
-          <Education></Education>
+		<footer className='min-h-screen font-normal text-xl px-[8.5vw] pt-[4vw]'>
+			<h1 className='text-6xl font-medium'>Ableton</h1>
+			<div className='flex flex-col gap-12 pt-[4vw]'>
+				<div className='flex'>
+					<Socials></Socials>
+					<Education></Education>
+					<SignUpNewsletter></SignUpNewsletter>
 				</div>
-        <div>
-          <Community></Community>
-          <LanguageAndLocation></LanguageAndLocation>
-        </div>
+				<div className='flex gap-[10vw]'>
+					<Community></Community>
+					<LanguageAndLocation></LanguageAndLocation>
+				</div>
 			</div>
-      <div>
-		<Bottom></Bottom>
-      </div>
-		</div>
+			<div className='mt-[6vw]'>
+				<Bottom></Bottom>
+			</div>
+		</footer>
 	);
 };
 
-
 const Bottom = () => {
 	return (
-		<div>
-			<div>
+		<div className='flex justify-between'>
+			<div className='flex gap-3'>
 				{[
-					'Contact',
-					'UsPress',
-					'ResourcesLegal',
-					'InfoPrivacy',
-					'PolicyCookie',
-					'SettingsImprint',
+					'Contact Us',
+					'Press Resources',
+					'Legal Info',
+					'Privacy Policy',
+					'Cookie Settings',
+					'Imprint',
 				].map((text) => (
-					<a key={text}>{text}</a>
+					<a
+						key={text}
+						className='font-medium text-sm'
+					>
+						{text}
+					</a>
 				))}
 			</div>
-			<div>
-				<h5>Made in Berlin</h5>
+			<div className='flex gap-3'>
+				<h5 className='font-medium text-sm'>Made in Berlin</h5>
 				<svg
 					role='img'
 					aria-label='Logo Ableton'
@@ -60,12 +64,12 @@ const Bottom = () => {
 
 const Community = () => {
 	return (
-		<div>
-			<h5>Community</h5>
+		<div className=' flex flex-col'>
+			<h5 className='font-medium'>Community</h5>
 			{[
-				'Find Ableton User Groups',
-				'Find Certified Training',
-				'Become a Certified Trainer',
+				'Find Ableton User Groups ›',
+				'Find Certified Training ›',
+				'Become a Certified Trainer ›',
 			].map((text, index) => (
 				<a key={index}>{text}</a>
 			))}
@@ -76,9 +80,11 @@ const Community = () => {
 const LanguageAndLocation = () => {
 	return (
 		<div>
+			<h5 className='font-medium'>Language and Location</h5>
 			<select
 				name='language'
 				id='language'
+				className='text-sm font-medium p-1 bg-[#eee] '
 			>
 				{['English', 'Deutsh', '日本語', '简体中文', 'Español'].map(
 					(lang, index) => (
@@ -89,6 +95,7 @@ const LanguageAndLocation = () => {
 			<select
 				name='location'
 				id='location'
+				className='text-sm max-w-[200px] font-medium p-1 bg-[#eee] '
 			>
 				<option>Please Choose</option>
 				<optgroup label='Common Countries'>
@@ -118,12 +125,13 @@ const LanguageAndLocation = () => {
 
 const Education = () => {
 	return (
-		<div>
-			<h5>Education</h5>
+		<div className='flex flex-col  min-w-[28vw]'>
+			<h5 className='font-medium'>Education</h5>
 			{[
-				'Ableton for the classNameroom',
-				'Offers for students and teachers ',
-				'Ableton for Colleges and Universities',
+				'Offers for students and teachers ›',
+				'Ableton for the classNameroom ›',
+
+				'Ableton for Colleges and Universities ›',
 			].map((text, index) => (
 				<a key={index}>{text}</a>
 			))}
@@ -133,22 +141,24 @@ const Education = () => {
 
 const SignUpNewsletter = () => {
 	return (
-		<div>
-			<h5>Sign up to our newsletter</h5>
+		<div className=''>
+			<h5 className='font-medium'>Sign up to our newsletter</h5>
 			<p>
 				Enter your email address to stay up to date with the latest offers,
 				tutorials, downloads, surveys and more.
 			</p>
-			<form>
+			<form className='flex mt-8	'>
 				<input
 					type='text'
 					name=''
 					id=''
 					placeholder='Email Address'
+					className='bg-[#eee] py-2 pl-4 w-full'
 				/>
 				<input
 					type='submit'
-					value='Sign Up'
+					value='Sign up'
+					className='bg-[#0000ff] py-2 px-7 text-white font-medium'
 				/>
 			</form>
 		</div>

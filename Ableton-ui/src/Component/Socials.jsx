@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 const Socials = () => {
-  return (
-		<div>
-			<div>
-				{['Register Live or Push', 'About Ableton', 'Jobs'].map(
+	return (
+		<div className='inline-block mr-[11vw]'>
+			<div className='flex flex-col'>
+				{['Register Live or Push ›', 'About Ableton ›', 'Jobs ›'].map(
 					(text, index) => (
-						<a key={index}>{text}</a>
+						<a  key={index}>{text}</a>
 					)
 				)}
 			</div>
-			<div>
+			<div className='flex mt-5 gap-3'>
 				<a href=''>
 					<svg
 						role='img'
@@ -18,7 +18,7 @@ const Socials = () => {
 						viewBox='0 0 48 48'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
-						className='w-5 h-5'
+						className='w-8 h-8'
 					>
 						<g clip-path='url(#clip0_4908_1133)'>
 							<path
@@ -48,7 +48,7 @@ const Socials = () => {
 						viewBox='0 0 48 48'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
-						className='w-5 h-5'
+						className='w-8 h-8'
 					>
 						<path
 							d='M36.6526 3.80786H43.3995L28.6594 20.6548L46 43.5798H32.4225L21.7881 29.6759L9.61989 43.5798H2.86886L18.6349 25.5601L2 3.80786H15.9222L25.5348 16.5165L36.6526 3.80786ZM34.2846 39.5414H38.0232L13.8908 7.63413H9.87892L34.2846 39.5414Z'
@@ -63,7 +63,7 @@ const Socials = () => {
 						viewBox='0 0 48 48'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
-						className='w-5 h-5'
+						className='w-8 h-8'
 					>
 						<g clip-path='url(#clip0_4908_1126)'>
 							<path
@@ -89,89 +89,87 @@ const Socials = () => {
 				<a href=''>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
-						x='0px'
-						y='0px'
-						width='100'
-						height='100'
-                        className='w-5 h-5'
-						viewBox='0 0 48 48'
+						viewBox='0 0 16 16'
+						id='instagram'
+						className='w-8 h-8'
 					>
-						<radialGradient
-							id='yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1'
-							cx='19.38'
-							cy='42.035'
-							r='44.899'
+						<linearGradient
+							id='a'
+							x1='1.464'
+							x2='14.536'
+							y1='14.536'
+							y2='1.464'
 							gradientUnits='userSpaceOnUse'
 						>
 							<stop
 								offset='0'
-								stop-color='#fd5'
+								stop-color='#FFC107'
 							></stop>
 							<stop
-								offset='.328'
-								stop-color='#ff543f'
+								offset='.507'
+								stop-color='#F44336'
 							></stop>
 							<stop
-								offset='.348'
-								stop-color='#fc5245'
+								offset='.99'
+								stop-color='#9C27B0'
 							></stop>
-							<stop
-								offset='.504'
-								stop-color='#e64771'
-							></stop>
-							<stop
-								offset='.643'
-								stop-color='#d53e91'
-							></stop>
-							<stop
-								offset='.761'
-								stop-color='#cc39a4'
-							></stop>
-							<stop
-								offset='.841'
-								stop-color='#c837ab'
-							></stop>
-						</radialGradient>
+						</linearGradient>
 						<path
-							fill='url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)'
-							d='M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z'
+							fill='url(#a)'
+							d='M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z'
 						></path>
-						<radialGradient
-							id='yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2'
-							cx='11.786'
-							cy='5.54'
-							r='29.813'
-							gradientTransform='matrix(1 0 0 .6663 0 1.849)'
+						<linearGradient
+							id='b'
+							x1='5.172'
+							x2='10.828'
+							y1='10.828'
+							y2='5.172'
 							gradientUnits='userSpaceOnUse'
 						>
 							<stop
 								offset='0'
-								stop-color='#4168c9'
+								stop-color='#FFC107'
 							></stop>
 							<stop
-								offset='.999'
-								stop-color='#4168c9'
-								stop-opacity='0'
+								offset='.507'
+								stop-color='#F44336'
 							></stop>
-						</radialGradient>
+							<stop
+								offset='.99'
+								stop-color='#9C27B0'
+							></stop>
+						</linearGradient>
 						<path
-							fill='url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)'
-							d='M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z'
+							fill='url(#b)'
+							d='M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z'
 						></path>
-						<path
-							fill='#fff'
-							d='M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z'
-						></path>
+						<linearGradient
+							id='c'
+							x1='11.923'
+							x2='12.677'
+							y1='4.077'
+							y2='3.323'
+							gradientUnits='userSpaceOnUse'
+						>
+							<stop
+								offset='0'
+								stop-color='#FFC107'
+							></stop>
+							<stop
+								offset='.507'
+								stop-color='#F44336'
+							></stop>
+							<stop
+								offset='.99'
+								stop-color='#9C27B0'
+							></stop>
+						</linearGradient>
 						<circle
-							cx='31.5'
-							cy='16.5'
-							r='1.5'
-							fill='#fff'
+							cx='12.3'
+							cy='3.7'
+							r='.533'
+							fill='url(#c)'
 						></circle>
-						<path
-							fill='#fff'
-							d='M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z'
-						></path>
 					</svg>
 				</a>
 				<a href=''>
@@ -181,7 +179,7 @@ const Socials = () => {
 						viewBox='0 0 48 48'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
-						className='w-5 h-5'
+						className='w-8 h-8'
 					>
 						<path
 							d='M34.353 17.3269C37.4397 19.5413 41.2211 20.8442 45.3051 20.8442V12.9572C44.5322 12.9574 43.7613 12.8765 43.0051 12.7157V18.9239C38.9214 18.9239 35.1405 17.621 32.053 15.4068V31.5017C32.053 39.5533 25.5492 46.0798 17.5268 46.0798C14.5334 46.0798 11.7512 45.1716 9.44006 43.6141C12.0779 46.3208 15.7565 48 19.8263 48C27.8492 48 34.3534 41.4734 34.3534 33.4215V17.3269H34.353ZM37.1904 9.36999C35.6129 7.64045 34.5772 5.40535 34.353 2.93435V1.91992H32.1735C32.7221 5.06056 34.5934 7.74374 37.1904 9.36999ZM14.5142 37.4356C13.6329 36.2759 13.1566 34.8572 13.1587 33.3985C13.1587 29.716 16.1336 26.7302 19.8037 26.7302C20.4877 26.7301 21.1675 26.8352 21.8194 27.0427V18.9795C21.0576 18.8748 20.2888 18.8303 19.5203 18.8466V25.1226C18.868 24.915 18.1878 24.8096 17.5037 24.8103C13.8335 24.8103 10.8589 27.7957 10.8589 31.4787C10.8589 34.0828 12.3458 36.3373 14.5142 37.4356Z'
@@ -200,6 +198,6 @@ const Socials = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default Socials
+export default Socials;
